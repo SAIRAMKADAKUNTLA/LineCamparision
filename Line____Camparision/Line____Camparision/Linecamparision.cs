@@ -38,6 +38,29 @@ namespace Line____Camparision
                 Console.WriteLine("Both lines are equal");
             else
                 Console.WriteLine("Both lines are not equal");
+            
         }
-    }
+        //UC3-Comparision
+        public void Comparision(int x1, int x2, int x3, int x4, int y1, int y2, int y3, int y4)
+        {
+            this.x1 = x1;
+            this.x2 = x2;
+            this.x3 = x3;
+            this.x4 = x4;
+            this.y1 = y1;
+            this.y2 = y2;
+            this.y3 = y3;
+            this.y4 = y4;
+            double LengthOne = +(Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2));
+            double LengthTwo = +(Math.Sqrt((x4 - x3) ^ 2 + (y4 - y3) ^ 2));
+            if (LengthOne == LengthTwo)
+            {
+                Console.WriteLine("Both lines are equal");
+            }
+            else if (LengthOne > LengthTwo)
+                Console.WriteLine("Lengthone is greater than lengthtwo");
+            else
+                Console.WriteLine("Lengthone is less than lengthtwo");
+           }
+     }
 }
